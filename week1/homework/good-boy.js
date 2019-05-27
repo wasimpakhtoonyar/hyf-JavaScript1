@@ -8,7 +8,8 @@ let dogYear = dogYearFuture - dogYearOfBirth;
 let shouldShowResultInDogYears = true;
 
 if (shouldShowResultInDogYears) {
-    console.log("Your dog will be " + dogYear * 3 + " dog years old in " + dogYearFuture);
+    let result = dogYear * 3;
+    console.log("Your dog will be " + result + " dog years old in " + dogYearFuture);
 } else {
     console.log("Your dog will be " + dogYear + " human years old in " + dogYearFuture);
 }
