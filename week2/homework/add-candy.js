@@ -1,7 +1,6 @@
 console.log('add candy');
 
 const boughtCandyPrices = [];
-const ammountToSpend = Math.random() * 100;
 
 function addCandy(candyType, weight) {
     if (candyType === 'sweet') {
@@ -25,12 +24,19 @@ function addCandy(candyType, weight) {
     }
 }
 
-function canBuyMoreCandy() {
+/**
+ * Checks if user can buy more candies
+ * 
+ * @param {number} boughtCandies array of numbers
+ * @returns boolean 
+ */
+function canBuyMoreCandy(boughtCandies) {
+    const ammountToSpend = Math.random() * 100;
     let total = 0;
     let canIBuyMore = false;
 
-    for (let i=0; i < boughtCandyPrices.length; i++) {
-        total += boughtCandyPrices[i];
+    for (let i=0; i < boughtCandies.length; i++) {
+        total += boughtCandies[i];
     }
 
     console.log('budget: ' + ammountToSpend);
@@ -48,7 +54,7 @@ addCandy('chocolate', 10);
 addCandy('toffee', 10);
 addCandy('chewing-gum', 10);
 
-if (canBuyMoreCandy()) {
+if (canBuyMoreCandy(boughtCandyPrices)) {
  console.log('You can buy more, so please do!');
 } else {
     console.log('Enough candy for you!');
