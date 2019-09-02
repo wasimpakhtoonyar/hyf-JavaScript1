@@ -11,5 +11,5 @@ if (shouldShowResultInDogYears) {
     let result = dogYear * 3;
     console.log("Your dog will be " + result + " dog years old in " + dogYearFuture);
 } else {
-    console.log("Your dog will be " + dogYear + " human years old in " + dogYearFuture);
+    console.log("Your dog will be " + dogYear + 7 +" human years old in " + 60);
 }
