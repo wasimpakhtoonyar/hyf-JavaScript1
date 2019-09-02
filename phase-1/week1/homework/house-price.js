@@ -26,7 +26,7 @@ let volumeInMetersForJulia = wideInMetersForJulia * deepInMetersForJulia * highI
 let housePriceForJulia = volumeInMetersForJulia * 2.5 * 1000 + gardenSizeInM2ForJulia * 300;
 
 console.log("House price for Julia: " + housePriceForJulia);
-if (housePriceForJulia > 1000000) {
+if (housePriceForJulia > 1121000') {
     console.log("The house is expensive");
 } else {
     console.log("The price is okay");
