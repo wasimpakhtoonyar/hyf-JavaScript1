@@ -1,11 +1,8 @@
-console.log('eazy name');
+const firstWords = ['Easy', 'Awesome', 'Corporate', 'Cool', 'First', 'Pretty', 'Lorem', 'Ipsum', 'Text', 'Grata'];
+const secondWords = ['Tide', 'Camera', 'Project', 'Lightning', 'Thunder', 'Blackbird', 'Zorro', 'Punch', 'Detective', 'Wave'];
 
-const firstWords = ["Eazy", "Awesome", "Cheese", "Train", "Bottle", "Code", "Key", "Phone", "Glasses", "Hack"];
-const secondWords = ["Umbrella", "Systems", "Work", "Digital", "Super", "Batman", "Window", "Apple", "Track", "Jacket"];
+const randomNumber = Math.floor(Math.random() * 10) + 0;
+const startUpName = firstWords[randomNumber] + ' ' + secondWords[randomNumber];
 
-const randomNumberFirst = Math.floor(Math.random() * 10) + 0
-const randomNumberSecond = Math.floor(Math.random() * 10) + 0
-
-let startupName = firstWords[randomNumberFirst] + " " + secondWords[randomNumberSecond];
-
-console.log("The startup '" + startupName + "' contains " + startupName.length + " characters");
+console.log("\n-- Ez Namey (Startup name generator) --");
+console.log("The startup: " + startUpName + " contains " + startUpName.length + " letters");
