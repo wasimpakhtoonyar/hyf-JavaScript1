@@ -13,3 +13,7 @@ if (shouldShowResultInDogYears) {
 } else {
     console.log("Your dog will be " + dogYear + 7 +" human years old in " + 60);
 }
+console.log("\n-- Goodboy-Oldboy (A dog age calculator) --");
+if(shouldShowResultInDogYears) {
+  console.log(str2);
+} else console.log(str);
